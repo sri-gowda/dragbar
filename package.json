@@ -1,12 +1,33 @@
 {
   "name": "dragbar",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve",
+    "build": "webpack",
+    "clean-deploy": "webpack && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sri-gowda/dragbar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sri-gowda/dragbar/issues"
+  },
+  "homepage": "https://github.com/sri-gowda/dragbar#readme",
+  "description": "",
+  "devDependencies": {
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.3.0",
+    "gh-pages": "^3.2.3",
+    "html-webpack-plugin": "^5.3.2",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.1"
+  }
 }

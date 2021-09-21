@@ -1,3 +1,4 @@
+import './styles.css';
 let sidebar = document.querySelector(".sidebar");
 let content = document.querySelector(".content");
 let dragholder = document.querySelector(".dragholder");
